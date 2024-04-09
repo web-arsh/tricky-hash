@@ -1,0 +1,413 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    color: white;
+}
+body{
+    box-sizing: border-box;
+    background-color: black;
+}
+#main{
+    box-sizing: border-box;
+}
+.profile{
+    width: 100px;
+    filter: drop-shadow(0px 0px 5px rgba(255, 255, 255, 0.207));
+}
+.name{
+    font-size: 30px;
+}
+.field{
+    font-weight: bold;
+}
+.col-1{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0%;
+    padding: 0%;
+    background-color: white;
+    text-align: center;
+    border-radius: 50%;
+}
+.col-1:hover{
+    background-color: rgb(176, 176, 176);
+}
+i{
+    font-size: 20px;
+    color: black;
+}
+.fa-twitter,.fa-youtube,.fa-paypal{
+    color: transparent;
+    -webkit-text-stroke: 1.5px black;
+}
+.box-1{
+    background-color: #2e343c;
+    box-sizing: content-box;
+    border-radius: 20px;
+    box-shadow: 0px 0px 0px 2px transparent;
+    transition: 0.2s all;
+}
+.box-1 a{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    color: transparent;
+}
+.img-public{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+img[alt="public"]{
+    width: 100%;
+    height: 50%;
+    border-radius: 18px;
+}
+.public-middle{
+    margin: 0% !important;
+}
+
+.public-middle h1{
+    font-size: 20px;
+}
+.public-middle p{
+    width: 100%;
+    font-size: 14px;
+    font-weight: bold;
+}
+.btn-take{
+    width: 120px;
+    background-color: white;
+    color: black;
+    height: 35px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-take h1{
+    font-size: 15px;
+}
+.btn-take-over{
+    height: 100%;
+    box-sizing: border-box;
+}
+.link-heading{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+}
+.link-icon{
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+}
+.link-heading i{
+    color: black;
+}
+.link-heading h1{
+    font-size: 20px;
+}
+.book{
+    border-radius: 25px;
+    background-color: white;
+    transition: 0.2s all;
+    position: relative;
+    top: 0;
+}
+
+.book:hover{
+    position: relative;
+    top: -5px;
+}
+img[alt="book"]{
+    width: 100%;
+    border-radius: 15px;
+    object-fit: contain;
+}
+.book h3{
+    display: -webkit-box;
+    height: 50px;
+    color: black;
+    font-size: 20px;
+    overflow: hidden;
+    font-weight: 600;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+}
+.book p{
+    font-weight: 400;
+    display: -webkit-box;
+    height: 50px;
+    color: black;
+    font-size: 15px;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+}
+.book button{
+    width: 130px;
+    height: 40px;
+    border-radius: 30px;
+    border: none;
+    font-size: 14px;
+    font-variant: small-caps;
+    text-transform: uppercase;
+    font-weight: bold;
+    outline: none;
+    background-color: rgb(63, 63, 63);
+    color: white;
+}
+.book button:focus{
+    outline: none;
+    border: none;
+}
+.book a{
+    margin: 0%;
+    padding: 0%;
+    color: transparent;
+}
+@media only screen and (min-width: 768px) {    
+    .box-1:hover{
+        width: 67% !important;
+    }
+    .left{
+        position: fixed;
+        top: 0%;
+        left: 0%;
+    }
+    .kit-box:hover{
+        position: relative;
+        top: -2px;
+    }
+}
+@media only screen and (max-width: 768px){
+    .book button{
+        width: 100px;
+        height: 40px;
+        border-radius: 30px;
+        border: none;
+        font-size: 12px;
+        font-variant: small-caps;
+        text-transform: uppercase;
+        font-weight: bold;
+        outline: none;
+        background-color: rgb(63, 63, 63);
+        color: white;
+    }
+    .changable{
+        position: static !important;
+    }
+    .popUp{
+        width: 100vw !important;
+        height: 300px !important;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        z-index: 1000;
+        transform: translate(-50%,-50%);
+        background-color: white;
+        display: none;
+    }
+    .popUp iframe{
+        width: 100vw !important;
+        height: calc(300px - 5%) !important;
+    }
+    #close{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30px !important;
+        height: 30px !important;
+        border: 1px solid black;
+    } 
+    .show{
+        display: flex;
+        flex-direction: column;
+        justify-content: right;
+        align-items: end;
+    }
+    .ebook{
+        overflow-x: scroll;
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto;
+    }
+    .ebook::-webkit-scrollbar {
+        height: 0px;
+    }
+    .book{
+        width: 50vw;
+        border-radius: 25px;
+        background-color: white;
+        transition: 0.2s all;
+        position: relative;
+        top: 0;
+    }
+    .book:hover{
+        position: relative;
+        top: -2px;
+    }
+    .img-kit{
+        width: 100% !important;
+        object-fit: fill;
+        object-position: center;
+    }
+    .kit-scroll{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto;
+        overflow-x: scroll;
+    }
+    .kit-scroll::-webkit-scrollbar {
+        height: 0px;
+    }
+    .kit-1,.kit-2{
+        width: 50vw !important;
+        padding: 0% !important;
+    }
+   
+}
+
+.img-kit{
+    object-fit: fill;
+    object-position: left;
+}
+.youtube{
+    margin: 0%;
+    padding: 0% !important;
+    border-radius: 20px;
+    background-color: rgb(200, 167, 125);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+.youtube .row{
+    height: 100% !important;
+    padding: 0% !important;
+    margin: 0% !important;
+}
+
+img[alt="youtube-video"]{
+    width: 100%;
+    object-fit: fill;
+    border: none;
+    border-radius: 20px;
+    background-color: transparent;
+    position: relative;
+    top: 0%;
+    left: 0%;
+    z-index: 10;
+}
+.btn-watch{
+    border: 2px solid rgb(200, 167, 125);
+    border-radius: 20px;
+    position: relative;
+    top: -10px;
+    left: 0%;
+    z-index: 20;
+}
+#shadow-btn{
+    width: 100%;
+    box-shadow: 0px -10px 5px 10px rgb(200, 167, 125);
+    border: 2px solid rgb(200, 167, 125);
+}
+
+.btn-watch button{
+    border: none;
+    width: 100px;
+    height: 40px;
+    border-radius: 30px;
+    border: none;
+    font-size: 12px;
+    font-variant: small-caps;
+    text-transform: uppercase;
+    font-weight: bold;
+    outline: none;
+    background-color: rgb(63, 63, 63);
+    color: white;
+}
+.popUp{
+    width: 700px;
+    height: 500px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 1000;
+    transform: translate(-50%,-50%);
+    background-color: white;
+    display: none;
+}
+.popUp iframe{
+    width: 100%;
+    height: calc(700px - 10%);
+}
+#close{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border: 1px solid black;
+}
+.show{
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    align-items: end;
+}
+.kit-img{
+    width: 100%;
+    object-fit: fill;
+    object-position: center;
+    background-color: transparent !important;
+}
+.kit-img2{
+    width: 50%;
+    object-fit: fill;
+    object-position: center;
+    background-color: transparent !important;
+}
+.kit-heading{
+    font-size: clamp(15px,20px,25px);
+    font-weight: 600;
+}
+.kit-para{
+    font-size: clamp(10px,15px,20px);
+    font-weight: 500;
+}
+.kit-btn button{
+    width: 100px;
+    height: 30px;
+    background-color: white;
+    color: rgb(64, 63, 63);
+    border-radius: 20px;
+    font-weight: 500;
+    text-align: center;
+    border: none;
+    outline: none;
+}
+.kit-box{
+    width: 100%;
+    height: 250px !important;
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    transition: 0.5s all;
+}
