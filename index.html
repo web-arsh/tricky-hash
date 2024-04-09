@@ -302,6 +302,23 @@
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/ad1ad54b86.js" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
+    <script>
+        let element = document.getElementsByClassName("popUp")[0];
+
+function myfunc(){
+  element.classList.toggle("show");
+  let ipframe = document.getElementsByTagName("iframe")[0];
+  ipframe.setAttribute("src","https://www.youtube.com/embed/LXX8WLpfIRc?si=v9rUoPEFVFzccI-w"); 
+  ipframe.stopVideo();
+}
+
+function redirect1(){
+  window.open("https://www.amazon.in/shop/trickyhash/list/1X0OCH8ACPB71?ref_=cm_sw_r_cp_ud_aipsflist_aipsftrickyhash_RXRZHGM4NPB6Y7NFD9AA","_blank");
+}
+
+function redirect2(){
+  window.open("https://nordvpn.com/creator/?coupon=thnord&utm_medium=affiliate&utm_term=&utm_content&utm_campaign=off601&utm_source=aff64953","_blank");
+}
+    </script>
   </body>
 </html>
